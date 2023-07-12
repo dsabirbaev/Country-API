@@ -1,0 +1,92 @@
+.modal-wrapper{
+    
+    display: grid;
+    place-items: center;
+    background-color: rgba(0,0,0,0.30);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    .modal-content{
+        
+        background-color: $color-white;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        padding: 20px;
+        .country__home{
+            
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            color: #111517;
+            font-size: 16px;
+            margin-bottom: 80px;
+        }
+
+        
+        .country-card{
+            
+            display: flex;
+            align-items: center;
+            column-gap: 120px;
+            &__img{
+                width: 600px;
+                height: 400px;
+                border-radius: 5px;
+            }
+            &__body{
+                width: 100%;
+               
+                &--name{
+                    color: #111517;
+                    font-size: 32px;
+                    font-weight: 800;
+                    margin-bottom: 23px;
+                }
+                &--info{
+                    display: flex;
+                    column-gap: 150px;
+                    margin-bottom: 70px;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 8px;
+                        color: #111517;
+                        font-size: 16px;
+                        font-weight: 600;
+
+                        span{
+                            font-weight: 300;
+                        }
+                    }
+                }
+                &--border{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    color: #111517;
+                    font-size: 14px;
+                    font-weight: 300;
+                    p{
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-right: 15px;
+                    }
+                    span{
+                        width: 96px;
+                        padding: 5px 0px;
+                        border-radius: 2px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+                        text-align: center;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,87 @@
+
+
+
+header{
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .header__title{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .header__mode{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+
+////// dark mode styles
+
+.body-mode-theme{
+    background-color: #202C36;
+    color: #fff;
+}
+
+.header-mode-theme {
+    background: #2B3844;
+    color: #fff;
+}
+
+.card-mode-theme {
+    background: #2B3844 !important;
+    color: #fff !important;
+}
+
+//////////////////////
+
+@media only screen and (max-width: 450px) {
+    header{
+        width: 100%;
+        background: #FFF;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+    
+        .header__title{
+            font-size: 14px;
+            font-weight: 800;
+        }
+        .header__mode{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
