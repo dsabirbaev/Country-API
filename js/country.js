@@ -11,7 +11,6 @@ async function getCountry(isName){
     try{
         const response = await fetch(`${baseURL}/name/${isName}?fullText=true`);
         const result = await response.json();
-        console.log(result)
         renderCountry(result);
     }catch(error){
         console.log("Fetch error" + error.message)

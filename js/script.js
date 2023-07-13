@@ -44,7 +44,7 @@ function renderData(data){
                     </ul>
                 </div>
 
-                <a href="./country.html" target="_blank" class="countries-card__btn" data-fullname=${value?.name}>Details</a>
+                <a href="#" class="countries-card__btn" data-fullname=${value?.name}>Details</a>
             `
            
             $(".countries-cards").append(card);
@@ -183,10 +183,11 @@ $(".header__mode").addEventListener("click", (e) => {
 
 
 
-
+////// Page target for country
 
 $(".countries-cards").addEventListener('click', (e) => {
     if(e.target.classList.contains('countries-card__btn')){
         localStorage.setItem('fullname', e.target.getAttribute('data-fullname'))
+        window.location.href = "./country.html"
     }
 })
