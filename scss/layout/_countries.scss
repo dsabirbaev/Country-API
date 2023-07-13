@@ -92,10 +92,13 @@
             }
 
             &__btn {
+                display: block;
+                text-align: center;
                 width: 100%;
                 font-weight: 700px;
                 padding: 5px 0px;
                 background-color: #008CBA;
+                color: $color-black;
                 font-size: 25px;
                 font-family: 'Nunito Sans', sans-serif;
                 &:hover{

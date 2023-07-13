@@ -604,10 +604,13 @@ header .header__mode {
   font-weight: 300;
 }
 #countries .countries-cards .countries-card__btn {
+  display: block;
+  text-align: center;
   width: 100%;
   font-weight: 700px;
   padding: 5px 0px;
   background-color: #008CBA;
+  color: #000000;
   font-size: 25px;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -1211,26 +1214,12 @@ header .header__mode {
     font-weight: 300;
   }
 }
-.modal-wrapper {
-  display: grid;
-  place-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 1000;
-  display: none;
+#country {
+  padding: 100px 0;
+  width: 100%;
 }
-.modal-wrapper .modal-content {
-  background-color: #FFFFFF;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  padding: 20px;
-}
-.modal-wrapper .modal-content .country__home {
+
+.wrapper-country .country__home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,32 +1233,39 @@ header .header__mode {
   font-size: 16px;
   margin-bottom: 80px;
 }
-.modal-wrapper .modal-content .country-card {
+.wrapper-country .country-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 0px;
+     -moz-column-gap: 0px;
+          column-gap: 0px;
 }
-.modal-wrapper .modal-content .country-card__img {
+.wrapper-country .country-card__img {
   width: 600px;
   height: 400px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
-.modal-wrapper .modal-content .country-card__body {
-  width: 100%;
+.wrapper-country .country-card__body {
+  width: 600px;
 }
-.modal-wrapper .modal-content .country-card__body--name {
+.wrapper-country .country-card__body--name {
   color: #111517;
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 23px;
 }
-.modal-wrapper .modal-content .country-card__body--info {
+.wrapper-country .country-card__body--info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1278,7 +1274,7 @@ header .header__mode {
           column-gap: 150px;
   margin-bottom: 70px;
 }
-.modal-wrapper .modal-content .country-card__body--info ul {
+.wrapper-country .country-card__body--info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,10 +1287,10 @@ header .header__mode {
   font-size: 16px;
   font-weight: 600;
 }
-.modal-wrapper .modal-content .country-card__body--info ul span {
+.wrapper-country .country-card__body--info ul span {
   font-weight: 300;
 }
-.modal-wrapper .modal-content .country-card__body--border {
+.wrapper-country .country-card__body--border {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1308,12 +1304,12 @@ header .header__mode {
   font-size: 14px;
   font-weight: 300;
 }
-.modal-wrapper .modal-content .country-card__body--border p {
+.wrapper-country .country-card__body--border p {
   font-size: 16px;
   font-weight: 600;
   margin-right: 15px;
 }
-.modal-wrapper .modal-content .country-card__body--border span {
+.wrapper-country .country-card__body--border span {
   width: 96px;
   padding: 5px 0px;
   border-radius: 2px;

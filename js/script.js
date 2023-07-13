@@ -43,8 +43,10 @@ function renderData(data){
                         <li>Capital: <span>${value?.capital ? value?.capital : '-'}</span></li>
                     </ul>
                 </div>
+
+                <a href="./country.html" target="_blank" class="countries-card__btn" data-fullname=${value?.name}>Details</a>
             `
-            card.dataset.country = value.name;
+           
             $(".countries-cards").append(card);
         })
     }
@@ -182,3 +184,9 @@ $(".header__mode").addEventListener("click", (e) => {
 
 
 
+
+$(".countries-cards").addEventListener('click', (e) => {
+    if(e.target.classList.contains('countries-card__btn')){
+        localStorage.setItem('fullname', e.target.getAttribute('data-fullname'))
+    }
+})
