@@ -16,7 +16,7 @@ async function getCountry(isName){
     }catch(error){
         console.log("Fetch error" + error.message)
     }finally{
-        console.log('Success!')
+        $(".loader-wrapper").style.display = "none";
     }
 }
 

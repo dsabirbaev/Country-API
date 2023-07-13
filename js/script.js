@@ -13,7 +13,7 @@ async function fetchingCountries(){
     }catch(error){
         console.log("Fetch error" + error.message)
     }finally{
-        console.log('Success!')
+        $(".loader-wrapper").style.display = "none";
     }
 }
 
